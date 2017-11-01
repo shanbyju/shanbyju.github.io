@@ -10,6 +10,8 @@ body{
   font-family: proxima-nova, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing:grayscale;
+  font-size: 13px;
+  color: #484848;
 }
 
 li{
@@ -87,7 +89,14 @@ p{
   line-height:60px;
 }
 
-
+.container-inner{
+  background-color: white;
+  position: relative;
+  top: -50px;
+  -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,.5);
+  box-shadow: 0 2px 64px 0 rgba(208,208,208,.5);
+  padding: 30px;
+}
 
 
 
