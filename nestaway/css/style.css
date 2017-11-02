@@ -36,7 +36,7 @@
   }
   .text-img{
     position: relative !important;
-    top: 55px !important;
+    top: 87px !important;
     right: 0;
     left: 0;
   }
@@ -54,12 +54,6 @@
   }
   .banner-mob{
     display: block !important;
-  }
-  .banner-mob img{
-    width: 100%;
-    margin: auto;
-    position: relative;
-    bottom: -83px;
   }
 
 }
