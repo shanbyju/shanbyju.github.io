@@ -49,6 +49,9 @@
   .container-inner{
     padding: 50px 20px !important;
   }
+  .more-details-widget ul li{
+    line-height: 25px !important;
+  }
 
 }
 
