@@ -88,11 +88,14 @@ p{
   font-size: 48px;
   line-height:60px;
 }
+.nestaway-logo img{
+  width: 150px;
+}
 
 .container-inner{
   background-color: white;
   position: relative;
-  top: -50px;
+  top: -90px;
   -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,.5);
   box-shadow: 0 2px 64px 0 rgba(208,208,208,.5);
   padding: 30px;
