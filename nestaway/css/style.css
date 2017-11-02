@@ -230,7 +230,12 @@ header nav a{
   margin-top: 20px;
 }
 
+.more-faq a{
+  text-decoration: underline;
+}
 
-
+.more-faq a:hover{
+  text-decoration: none;
+}
 
 
