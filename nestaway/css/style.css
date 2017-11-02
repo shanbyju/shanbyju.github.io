@@ -18,18 +18,23 @@ li{
 	list-style: none;
 }
 
-a{
+a, button{
   outline: none;
 	-webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 a:focus, button:focus{
   outline: none !important;
   border: 0;
+}
+
+.clr{
+  clear: both;
 }
 
 h1{
@@ -72,16 +77,80 @@ p{
 .text-center{
   text-align: center !important;
 }
+.relative{
+  position: relative;
+}
 
+
+header{
+  width: 100%;
+  padding: 14px 0;
+}
+
+header img.logo{
+  width: 100px;
+}
+header nav{
+  float: right;
+  text-align: right;
+  padding-top: 6px;
+}
+header nav a{
+  margin-left: 50px;
+}
+#canvas1{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .4;
+}
+
+.main-widget .grid{
+  max-width: 800px;
+}
 
 .banner-widget{
-  background-image: -webkit-linear-gradient(229deg,#633ea5 13%,#36215a 65%);
-  background-image: -moz-linear-gradient(229deg,#633ea5 13%,#36215a 65%);
-  background-image: -o-linear-gradient(229deg,#633ea5 13%,#36215a 65%);
-  background-image: linear-gradient(221deg,#633ea5 13%,#36215a 65%);
-  height: 400px;
+  width: 100%;
+  height: 540px;
+}
+.text-right{
+  text-align: right;
+}
+.text-img{
+  position: absolute;
+  top: 40px;
+  right: 100px;
   text-align: center;
-  padding: 60px 0;
+}
+.text-img img{
+  width: 470px;
+}
+
+.banner-green{
+  background-color: #00d7c5;
+  height: 540px;
+  position: relative;
+}
+.iphone-img{
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  z-index: 10;
+}
+.diwali-img{
+  position: absolute;
+  z-index: 9;
+  top: 20%;
+  left: 50px;
+}
+
+.diwali-img img{
+  opacity: .4;
 }
 
 .banner-widget h1{
@@ -92,33 +161,75 @@ p{
 .nestaway-logo img{
   width: 150px;
 }
+.banner-btn{
+  padding-top: 20px;
+}
+.banner-btn button{
+  background-color: white;
+  border-color: #00a39d;
+  color: #00a39d;
+  font-weight: bold;
+  padding: 10px 50px;
+  margin-right: 10px;
+}
 
+.banner-btn button:hover{
+  background-color: #00a39d;
+}
+.banner-btn button:focus{
+  background-color: #00a39d;
+}
 .container-inner{
+  max-width: 800px;
+  margin: 0 auto;
   background-color: white;
   position: relative;
-  top: -90px;
+  top: -50px;
   -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,.5);
   box-shadow: 0 2px 64px 0 rgba(208,208,208,.5);
-  padding: 30px;
+  padding: 50px;
 }
 
-.over-view{
-  background: #e60a6f;
-  padding: 40px;
-  color: white;
+.container-inner .grid{
+  max-width: 800px;
 }
 
-.over-view h2{
-  color: white;
+.more-details-widget .icon img{
+  width: 40px;
+}
+.more-details-widget h2{
+  padding: 0;
   margin: 0;
+  padding-bottom: 15px;
 }
 
-.over-view ul{
+.more-details-widget .col-2-12{
+  width: 12%;
+}
+.more-details-widget ul{
   margin: 0;
   padding: 0;
 }
-
-.over-view ul li{
-  font-size: 14px;
-  padding-bottom: 15px;
+.more-details-widget ul span{
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+  padding: 8px 0;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
+.more-details-widget ul li{
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.terms{
+  font-size: 11px;
+  padding-top: 20px;
+  line-height: 22px;
+  border-top: 1px solid #eeeeee;
+  margin-top: 20px;
+}
+
+
+
+
+
