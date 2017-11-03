@@ -157,8 +157,8 @@ header nav a{
 }
 #canvas1{
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
