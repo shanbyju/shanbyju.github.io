@@ -123,10 +123,6 @@ p{
   padding-bottom: 15px;
 }
 
-.image-screen img{
-  display: block;
-  width: 100%;
-}
 
 ul.grey-ui{
   padding: 0;
@@ -141,4 +137,9 @@ ul.grey-ui li{
   list-style: decimal;
   margin-left: 21px;
   color: #ba3939;
+}
+
+.image-screen img{
+  display: block !important;
+  width: 100% !important;
 }
