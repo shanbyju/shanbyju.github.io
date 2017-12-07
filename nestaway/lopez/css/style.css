@@ -40,7 +40,7 @@ h1{
 }
 
 h2{
-  font-size: 18px;
+  font-size: 30px;
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 600;
   padding-bottom: 20px;
@@ -121,4 +121,24 @@ p{
 .over-view ul li{
   font-size: 14px;
   padding-bottom: 15px;
+}
+
+.image-screen img{
+  display: block;
+  width: 100%;
+}
+
+ul.grey-ui{
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  background-color: #ffeff6;
+  padding: 20px;
+}
+
+ul.grey-ui li{
+  padding-bottom: 10px;
+  list-style: decimal;
+  margin-left: 21px;
+  color: #ba3939;
 }
