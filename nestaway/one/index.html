@@ -14,7 +14,8 @@
 			<div class="">
 				<div class="col-5-12">
 					<a href="https://www.nestaway.com">
-						<img class="logo" src="https://d2jkxa685yvbof.cloudfront.net/assets/new-home/logo-colored-528f66519ed29c3da4a247ea32f65187.svg">
+						<img class="logo" id="logo_white" src="images/onelogo-white.svg">
+						<img class="logo" id="logo_black" src="images/onelogo.svg" style="display: none;">
 					</a>
 				</div>
 				<div class="col-7-12">
@@ -35,6 +36,7 @@
 							YOU'LL LOVE TO LIVE
 						</h1>
 						<a href="" class="btn btn-default">View ONE Apartment</a>
+						<div class="downArrow bounce">&darr; SCROLL DOWN &darr;</div>
 					</div>
 				</div>
 				<div class="col-1-2">
@@ -148,11 +150,12 @@
 			</div>
 		</section>
 		<section>
-			<div class="grid text-center">
+			<div class="grid text-center" style="overflow: visible;">
 				<h2>Our Properties in <span>Bangalore</span></h2>
 				<div class="house-sec">
 					<div class="col-1-2">
 						<div class="house-card">
+							<div class="card-lable">2 beds available HURRY!</div>
 							<img src="images/home1.jpg">
 							<div class="content">
 								<h3>Platinum City</h3>
@@ -174,8 +177,14 @@
 	$(document).on("scroll", function () {
     if ($(document).scrollTop() >= 100) {
       $("header").removeClass("transparent-bg");
+      $("#logo_white").hide();
+      $("#logo_black").show();
+      $(".downArrow").fadeOut();
     } else{
       $("header").addClass("transparent-bg");
+      $("#logo_white").show();
+      $("#logo_black").hide()
+      $(".downArrow").fadeIn();
     }
   });
 

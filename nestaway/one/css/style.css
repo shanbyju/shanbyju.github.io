@@ -132,12 +132,12 @@ header{
 }
 
 header img.logo{
-  width: 100px;
+  width: 80px;
 }
 header nav{
   float: right;
   text-align: right;
-  padding-top: 6px;
+  padding-top: 13px;
 }
 header nav a{
   margin-left: 50px;
@@ -248,7 +248,9 @@ span.text2{
   transition: all .3s ease;
   box-shadow: 0 16px 32px 0 rgba(0,0,0,.1);
   border: 1px solid #eee;
+  border-radius: 3px;
   cursor: pointer;
+  position: relative;
 }
 .house-card:hover{
   box-shadow: none;
@@ -344,5 +346,97 @@ input[type=radio]:checked + label, input[type=checkbox]:checked + label{
   color: #484848;
   font-size: 30px;
   transition: all .3s ease;
+  cursor: default !important;
 }
+
+.card-lable:after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 0;
+  border-top: 1em solid #545454;
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+}
+
+.card-lable{
+  padding: 10px 20px;
+  background: #000000bf ;
+  position: absolute;
+  z-index: 1;
+  top: 2em;
+  left: -1em;
+  color: #fff;
+  font-weight: 600;
+  border-top-right-radius: .3em;
+  border-bottom-right-radius: .3em;
+}
+
+.downArrow{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12%;
+  margin: 0  auto;
+  text-align: center;
+  color: #ffffff;
+  opacity: .3;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
 
