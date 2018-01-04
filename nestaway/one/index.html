@@ -26,6 +26,7 @@
 							<span id="#mumbai" style="display: none;">Mumbai</span> 
 							<i class="fa fa-angle-down"></i>
 						</span>
+						<a href="" class="apartment-btn na-green header-one-link" style="display: none;">View ONE Apartment</a>
 						<a href="https://faq.nestaway.com/docs/refer-earn" target="_blank">FAQs</a>
 						<a href="">Login</a>
 					</nav>
@@ -289,11 +290,13 @@
       $("#logo_white").hide();
       $("#logo_black").show();
       $(".downArrow").fadeOut();
+      $(".header-one-link").show();
     } else{
       $("header").addClass("transparent-bg");
       $("#logo_white").show();
       $("#logo_black").hide()
       $(".downArrow").fadeIn();
+      $(".header-one-link").hide();
     }
   });
 
