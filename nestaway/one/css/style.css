@@ -439,4 +439,13 @@ input[type=radio]:checked + label, input[type=checkbox]:checked + label{
 }
 
 
+@media screen and (min-width: 1440px){
+  .banner-text {
+    padding: 200px 0 0 120px;
+  }
+  .banner-form {
+    padding: 200px 0 0 120px;
+  }
+}
+
 

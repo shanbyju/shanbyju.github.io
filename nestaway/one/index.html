@@ -35,7 +35,7 @@
 							THE ONE PLACE <br>
 							YOU'LL LOVE TO LIVE
 						</h1>
-						<a href="" class="btn btn-default">View ONE Apartment</a>
+						<a href="" class="btn btn-default apartment-btn">View ONE Apartment</a>
 						<div class="downArrow bounce">&darr; SCROLL DOWN &darr;</div>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 
-		<section>
+		<section id="scroll_section">
 			<div class="grid text-center">
 				<h2>What is ONE by Nestaway?</h2>
 				<p>
@@ -149,13 +149,13 @@
 				<div class="clr"></div>
 			</div>
 		</section>
-		<section>
+		<section id="apartment">
 			<div class="grid text-center" style="overflow: visible;">
 				<h2>Our Properties in <span>Bangalore</span></h2>
 				<div class="house-sec">
 					<div class="col-1-2">
 						<div class="house-card">
-							<div class="card-lable">2 beds available HURRY!</div>
+							<div class="card-lable">2 Houses available HURRY!</div>
 							<img src="images/home1.jpg">
 							<div class="content">
 								<h3>Platinum City</h3>
@@ -186,6 +186,20 @@
       $("#logo_black").hide()
       $(".downArrow").fadeIn();
     }
+  });
+
+  $(".apartment-btn").click(function (event){
+    event.preventDefault();
+    $('html, body').animate({
+       scrollTop: $("#apartment").offset().top - 20
+    }, 1000);
+  });
+
+  $(".bounce").click(function (event){
+    event.preventDefault();
+    $('html, body').animate({
+       scrollTop: $("#scroll_section").offset().top - 70
+    }, 500);
   });
 
 </script>
