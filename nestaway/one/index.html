@@ -21,7 +21,11 @@
 				</div>
 				<div class="col-6-12">
 					<nav>
-						<span class="header-city">Bangalore <i class="fa fa-angle-down"></i></span>
+						<span class="header-city">
+							<span id="#bangalore">Bangalore</span>
+							<span id="#mumbai" style="display: none;">Mumbai</span> 
+							<i class="fa fa-angle-down"></i>
+						</span>
 						<a href="https://faq.nestaway.com/docs/refer-earn" target="_blank">FAQs</a>
 						<a href="">Login</a>
 					</nav>
@@ -121,7 +125,7 @@
 						<p>
 							All houses in One by Nestaway are fully furnished with beds, sofas, dining table, TV, refrigerator, washing machine, RO filter, modular kitchen and even utensils so that you can just bring your suitcase and move in.
 						</p>
-						<img src="images/cardimg1.png">
+						<img src="images/cardimg1.svg">
 					</div>
 				</div>
 				<div class="col-1-3">
@@ -133,7 +137,7 @@
 						<p>
 							Living at One by Nestaway also means that we will take care of all utility services for you - wifi, electricity, water, DTH and housekeeping. At the end of the month, you will get one consolidated bill for them all.
 						</p>
-						<img src="images/cardimg1.png">
+						<img src="images/cardimg2.svg" style="width: 100%; left: 0;">
 					</div>
 				</div>
 				<div class="col-1-3">
@@ -145,7 +149,7 @@
 						<p>
 							We firmly believe that good company is an instant recipe for happiness. Based on your living preferences (vegetarian, smoking, etc), we will use matching algorithms to find your kind of people so that your housemate and you can go from strangers to friends in no time!
 						</p>
-						<img src="images/cardimg1.png">
+						<img src="images/cardimg3.svg" style="left: 0;">
 					</div>
 				</div>
 				<div class="clr"></div>
@@ -264,11 +268,11 @@
 				This would help us in serving you the right list of homes. <br>You can change this anytime.
 			</p>
 			<ul class="city-icon-widget">
-				<li class="city-icon">
+				<li class="city-icon" id="bang-btn">
 					<img src="images/bangalore.svg">
 					<span>Bangalore</span>
 				</li>
-				<li class="city-icon">
+				<li class="city-icon" id="mum-btn">
 					<img src="images/mumbai.svg">
 					<span>Mumbai</span>
 				</li>
@@ -328,6 +332,8 @@
   	$("body").addClass("overflow");
   	$(".close-btn").show();
   });
+
+  
 
 </script>
 </body>
