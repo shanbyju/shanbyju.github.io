@@ -7,9 +7,9 @@
 	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
 	  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	</head>	
-	<body>
+	</head>
 
+	<body class="overflow">
 	<div class="main-widget">
 		<header class="transparent-bg">
 			<div class="">
@@ -153,7 +153,7 @@
 		</section>
 		<section id="apartment">
 			<div class="grid text-center" style="overflow: visible;">
-				<h2>Our Properties in <span>Bangalore <i class="fa fa-angle-down"></i></span></h2>
+				<h2>Our Properties in <span class="inner-city">Bangalore <i class="fa fa-angle-down"></i></span></h2>
 				<div class="house-sec">
 					<div class="col-1-2">
 						<div class="house-card">
@@ -230,13 +230,13 @@
 						</div>
 						<div class="col-3-12">
 							<h5>Company</h5>
-							<a href="">Careers</a>
-							<a href="">About us</a>
-							<a href="">Privacy Policy</a>
-							<a href="">FAQ</a>
-							<a href="">ONE by Nestaway Terms of Use</a>
-							<a href="">Contact Us</a>
-							<a href="">Nestaway.com</a>
+							<a href="https://www.nestaway.com/careers">Careers</a>
+							<a href="https://www.nestaway.com/welcome/about">About us</a>
+							<a href="https://www.nestaway.com/welcome/privacy_policy">Privacy Policy</a>
+							<a href="https://one.nestaway.com/Faq">FAQ</a>
+							<a href="https://one.nestaway.com/TenancyTerms">ONE by Nestaway Terms of Use</a>
+							<a href="https://www.nestaway.com/welcome/contact">Contact Us</a>
+							<a href="https://www.nestaway.com/">Nestaway.com</a>
 						</div>
 						<div class="col-4-12 social">
 							<h5>Join Us</h5>
@@ -254,6 +254,26 @@
 				</div>
 			</section>
 		</footer>
+	</div>
+
+	<div class="city-popup">
+		<div class="city-popup-inner">
+			<span class="close-btn">×</span>
+			<h2>Choose your city</h2>
+			<p>
+				This would help us in serving you the right list of homes. <br>You can change this anytime.
+			</p>
+			<ul class="city-icon-widget">
+				<li class="city-icon">
+					<img src="images/bangalore.svg">
+					<span>Bangalore</span>
+				</li>
+				<li class="city-icon">
+					<img src="images/mumbai.svg">
+					<span>Mumbai</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -285,6 +305,28 @@
     $('html, body').animate({
        scrollTop: $("#scroll_section").offset().top - 70
     }, 500);
+  });
+
+  $(".city-icon").click(function(){
+  	$(".city-popup").fadeOut(200);
+  	$("body").removeClass("overflow");
+  });
+
+  $(".close-btn").click(function(){
+  	$(".city-popup").fadeOut(200);
+  	$("body").removeClass("overflow");
+  });
+
+  $(".header-city").click(function(){
+  	$(".city-popup").fadeIn(200);
+  	$("body").addClass("overflow");
+  	$(".close-btn").show();
+  });
+
+  $(".inner-city").click(function(){
+  	$(".city-popup").fadeIn(200);
+  	$("body").addClass("overflow");
+  	$(".close-btn").show();
   });
 
 </script>
