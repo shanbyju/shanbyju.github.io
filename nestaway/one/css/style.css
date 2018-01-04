@@ -135,17 +135,37 @@ header img.logo{
   width: 80px;
 }
 header nav{
+  width: 100%;
   float: right;
   text-align: right;
-  padding-top: 13px;
+  padding-top: 4px;
+  padding-left: 80px;
 }
 header nav a{
+  display: inline-block;
   margin-left: 50px;
   color: #000000;
+  margin-top: 10px;
 }
 
 section{
   padding: 80px 0;
+}
+
+.header-city{
+  border: 1px solid #000000;
+  color: #000000;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  float: left;
+}
+
+.header-city i{
+  color: #000000;
+  font-size: 15px;
+  padding-left: 6px;
 }
 
 
@@ -374,6 +394,90 @@ input[type=radio]:checked + label, input[type=checkbox]:checked + label{
   border-bottom-right-radius: .3em;
 }
 
+footer{
+  width: 100%;
+  background-color: #fafafa;
+}
+
+footer section{
+  padding: 60px 0;
+}
+
+footer a{
+  font-size: 12px;
+}
+
+.about img{
+  width: 100px;
+}
+
+.social a{
+  display: inline-block !important;
+  margin-right: 8px;
+}
+
+.social i{
+  font-size: 18px;
+}
+
+.footer-botttom{
+  border-top: 10px solid #ffffff;
+}
+
+.footer-botttom p{
+  padding-top: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer-botttom h5{
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.footer-botttom a{
+  color: #6a6a6a;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-botttom a:hover{
+  color: #00a59e;
+}
+
+.count-widget{
+  padding-top: 50px;
+}
+
+.count-widget .col-1-4{
+  padding: 0 30px;
+  border-right: 1px solid #ddd;
+  min-height: 170px;
+}
+
+.count-widget img{
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.count-widget h5{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.app-icon img{
+  width: 20px;
+  margin-right: 10px;
+}
+
+.count-widget p{
+  font-size: 11px;
+  color: #9a9a9a;
+  line-height: 18px !important;
+}
+
 .downArrow{
   position: absolute;
   left: 0;
@@ -385,6 +489,8 @@ input[type=radio]:checked + label, input[type=checkbox]:checked + label{
   opacity: .3;
 }
 .bounce {
+  height: 50px;
+  cursor: pointer;
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
@@ -445,6 +551,9 @@ input[type=radio]:checked + label, input[type=checkbox]:checked + label{
   }
   .banner-form {
     padding: 200px 0 0 120px;
+  }
+  header nav{
+    padding-left: 120px;
   }
 }
 
