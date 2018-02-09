@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+	  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
+	</head>	
+	<body>
+		<div class="main-div">
+			<div class="step-widget">
+				<a href="">Who?</a>
+				<a href="">Need?</a>
+				<a href="">Info?</a>
+				<div class="progress-widget">
+					<div class="progress progress-bar__lean">
+						<div class="progress-bar progress-bar-success progress-bar__babu" style="width: 80%;"></div>
+					</div>
+					<div class="progress-text">You’re 80% done with your listing</div>
+				</div>
+			</div>
+			<h1>How many rooms are present in the house?</h1>
+			<div class="grid content-widget">
+				<div class="small-widge">
+					<section class="na-custome sml-input">
+						<div class="col-1-4">
+							<input type="radio" id="3" name="tenant" value="bed">
+							<label for="3"><b>1 BHK</b></label>
+						</div>
+						<div class="col-1-4">
+							<input type="radio" id="4" name="tenant" value="bed">
+							<label for="4"><b>2 BHK</b></label>
+						</div>
+						<div class="col-1-4">
+							<input type="radio" id="5" name="tenant" value="bed">
+							<label for="5"><b>3 BHK</b></label>
+						</div>
+						<div class="col-1-4">
+							<input type="radio" id="6" name="tenant" value="bed">
+							<label for="6"><b>Other</b></label>
+						</div>
+						<div class="clr"></div>
+					</section>
+					<section>
+						<h2>Is your house furnished?</h2>
+						<section class="na-custome sml-input">
+						<div class="col-1-3">
+							<input type="radio" id="3a" name="tenant2" value="bed2">
+							<label for="3a" id="1"><b>Full furnished</b></label>
+						</div>
+						<div class="col-1-3">
+							<input type="radio" id="4a" name="tenant2" value="bed2">
+							<label for="4a" id="2"><b>Semi furnished</b></label>
+						</div>
+						<div class="col-1-3">
+							<input type="radio" id="5a" name="tenant2" value="bed2">
+							<label for="5a" id="un-furnished"><b>Unfurnished</b></label>
+						</div>
+						<div class="clr"></div>
+					</section>
+					</section>
+					<div class="extra-details animated fadeIn" id="furnished-details" style="display: none; margin-right: 20px;">
+						<img src="images/idea.svg">
+						<p>
+							Nestaway provides furnishing options for rentals, 
+							checkout for prices
+						</p>
+						<a href="">Furnishing Prices</a>
+					</div>
+				</div>
+				<!-- action -->
+				<div class="action-widget">
+					<a href="step3.html" class="btn btn-outline-secondary btn-width-sm flLt">Prev</a>
+					<a href="step5.html" class="btn btn-primary btn-width-sm">Next</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$("#un-furnished").click(function(){
+			  $("#furnished-details").fadeIn();
+			  $('html, body').animate({
+		       scrollTop: $("#furnished-details").offset().top - 20
+		    }, 1000);
+			});
+			$("#1, #2").click(function(){
+			  $("#furnished-details").fadeOut();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+	  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
+	</head>	
+	<body>
+		<div class="main-div">
+			<div class="step-widget">
+				<a href="">Who?</a>
+				<a href="">Need?</a>
+				<a href="">Info?</a>
+				<div class="progress-widget">
+					<div class="progress progress-bar__lean">
+						<div class="progress-bar progress-bar-success progress-bar__babu" style="width: 20%;"></div>
+					</div>
+					<div class="progress-text">You’re 20% done with your listing</div>
+				</div>
+			</div>
+			<h1>Nice to meet you Rakesh! Tell us about your need.</h1>
+			<div class="grid content-widget">
+				<div class="small-widge">
+					<section>
+						<div class="col-1-2 na-custome">
+							<input type="radio" id="1" name="gender" value="bed">
+							<label for="1" id="tenant">
+								<img src="images/tenant.svg">
+								<b>Need Tenants</b>
+							</label>
+						</div>
+						<div class="col-1-2 na-custome">
+							<input type="radio" id="2" name="gender" value="bed">
+							<label for="2" id="pm">
+								<img src="images/building.svg">
+								<b>Property Management</b>
+							</label>
+						</div>
+						<div class="clr"></div>
+					</section>
+					<div class="extra-details" id="furnished-details" style="display: none; margin-right: 20px;">
+						<img src="images/idea.svg">
+						<p>
+							We take over all tenant-related aspects of renting out a house.
+						</p>
+						<a href="">Know More</a>
+					</div>
+					<section class="na-custome" style="display: none;"" id="tenant-details">
+						<h2>What type of tenant would you prefer?</h2>
+						<div class="col-1-3">
+							<input type="radio" id="3" name="tenant" value="bed">
+							<label for="3">
+								<img src="images/single.svg">
+								<b>Bachelors</b>
+							</label>
+						</div>
+						<div class="col-1-3">
+							<input type="radio" id="4" name="tenant" value="bed">
+							<label for="4">
+								<img src="images/family.svg">
+								<b>Family</b>
+							</label>
+						</div>
+						<div class="col-1-3">
+							<input type="radio" id="5" name="tenant" value="bed">
+							<label for="5">
+								<img src="images/smile.svg">
+								<b>Either</b>
+							</label>
+						</div>
+						<div class="clr"></div>
+					</section>
+				</div>
+				<!-- action -->
+				<div class="action-widget">
+					<a href="step1.html" class="btn btn-outline-secondary btn-width-sm flLt">Prev</a>
+					<a href="step3.html" class="btn btn-primary btn-width-sm">Next</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			$("#tenant").click(function(){
+			  $("#tenant-details").fadeIn();
+			  $("#furnished-details").fadeIn();
+		    $('html, body').animate({
+		       scrollTop: $("#tenant-details").offset().top - 20
+		    }, 1000);
+			});
+			$("#pm").click(function(){
+			  $("#tenant-details").fadeOut();
+			  $("#furnished-details").fadeOut();
+			});
+		</script>
+
+	</body>
+</html>
