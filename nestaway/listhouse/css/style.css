@@ -12,7 +12,7 @@ body{
   font-size: 14px;
   font-weight: 400;
   color: #666666;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .flRt{
@@ -21,6 +21,10 @@ body{
 
 .flLt{
   float: left;
+}
+.float-none{
+  float: none;
+  display: inline-block;
 }
 
 li{
@@ -138,7 +142,8 @@ input{
   width: 100%;
   border: 1px solid #979797;
   padding: 12px 14px;
-  border-radius: 2px;
+  border-radius: 3px;
+  outline: none;
 }
 
 .btn-width-sm{
@@ -209,6 +214,27 @@ input{
 .step-widget a{
   color: #666666;
   margin-right: 30px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.step-widget a:hover{
+  text-decoration: none;
+}
+
+.step-widget a.active{
+  font-weight: bold;
+  color: #3D3C40;
+}
+
+.step-widget a.done{
+  font-weight: normal;
+  color: #00a59e;
+  cursor: pointer;
+}
+
+.step-widget a.done:hover{
+  text-decoration: underline;
 }
 
 .step-widget a:last-child{
@@ -223,10 +249,12 @@ input{
 .action-widget{
   width: 500px;
   margin: 0 auto;
-  padding-top: 50px;
+  margin-top: 50px;
+  padding-top: 20px;
   text-align: right;
-  padding-right: 20px;
+  margin-right: 20px auto;
   padding-bottom: 100px;
+  box-shadow: 0 -5px 5px -5px #c7c7c7;
 }
 
 .sml-input label{
@@ -268,7 +296,7 @@ input{
 }
 
 .progress-bar__lean {
-  height: 5px;
+  height: 4px;
 }
 
 .progress-bar:last-child {
@@ -310,12 +338,12 @@ input{
   text-align: center;
   padding-top: 4px;
 }
-.map-pin{
+.map-pin, .rent-input{
   position: relative;
 }
 .map-pin:before{
   content: "";
-  background: url(../images/idea.svg) no-repeat;
+  background: url(../images/map.svg) no-repeat;
   position: absolute;
   z-index: 100;
   display: block;
@@ -325,7 +353,29 @@ input{
   left: 12px;
   top: 12px;
 }
-.map-pin input{
+
+.rent-input:before{
+  content: "";
+  background: url(../images/indian-rupee.svg) no-repeat;
+  position: absolute;
+  z-index: 100;
+  display: block;
+  overflow: hidden;
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  top: 12px;
+  opacity: .6;
+}
+.rent-input input{
+  font-size: 16px;
+}
+
+.rent-input input:placeholder-shown{
+  font-size: 15px;
+}
+
+.map-pin input, .rent-input input{
   padding-left: 35px;
 }
 

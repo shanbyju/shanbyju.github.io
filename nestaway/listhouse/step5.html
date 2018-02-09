@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+	  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
+	</head>	
+	<body>
+		<div class="main-div">
+			<div class="step-widget">
+				<a href="step1.html" class="done">Who?</a>
+				<a href="step3.html" class="done">Need?</a>
+				<a href="" class="active">Info?</a>
+				<div class="progress-widget">
+					<div class="progress progress-bar__lean">
+						<div class="progress-bar progress-bar-success progress-bar__babu" style="width: 98%;"></div>
+					</div>
+					<div class="progress-text">You’re 98% done with your listing</div>
+				</div>
+			</div>
+			<h1>Almost done! Is the property ready to be occupied?</h1>
+			<div class="grid content-widget">
+				<div class="small-widge">
+					<section class="na-custome sml-input">
+						<div class="col-1-4 float-none">
+							<input type="radio" id="3" name="tenant" value="bed">
+							<label for="3"><b>Yes</b></label>
+						</div>
+						<div class="col-1-4 float-none">
+							<input type="radio" id="4" name="tenant" value="bed">
+							<label for="4"><b>No</b></label>
+						</div>
+						<div class="clr"></div>
+					</section>
+					<section>
+					<h2>What is your current rent?</h2>
+					<section class="na-custome sml-input">
+						<div class="col-6-12 float-none">
+							<div class="rent-input">
+								<input type="number" name="" placeholder="Current rent">
+							</div>
+						</div>
+						<div class="clr"></div>
+					</section>
+					</section>
+					<h2>What is your rent expectation?</h2>
+					<section class="na-custome sml-input">
+						<div class="col-6-12 float-none">
+							<div class="rent-input">
+								<input type="number" name="" placeholder="Expectation rent">
+							</div>
+						</div>
+						<div class="clr"></div>
+					</section>
+				</div>
+				<!-- action -->
+				<div class="action-widget">
+					<a href="step4.html" class="btn btn-outline-secondary btn-width-sm flLt">Prev</a>
+					<a href="#" class="btn btn-primary btn-width-sm">Done</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$("#un-furnished").click(function(){
+			  $("#furnished-details").fadeIn();
+			  $('html, body').animate({
+		       scrollTop: $("#furnished-details").offset().top - 20
+		    }, 1000);
+			});
+			$("#1, #2").click(function(){
+			  $("#furnished-details").fadeOut();
+			});
+		</script>
+	</body>
+</html>
