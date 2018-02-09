@@ -381,7 +381,7 @@ input{
 
 @media only screen and (max-width: 768px) {
   .main-div{
-    padding: 20px 0;
+    padding: 0 20px;
   }
    .progress-widget, .small-widge, .action-widget{
     width: 100%;
