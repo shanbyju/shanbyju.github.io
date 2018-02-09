@@ -379,7 +379,11 @@ input{
   padding-left: 35px;
 }
 
-
+@media only screen and (max-width: 768px) {
+   .progress-widget, .small-widge, .action-widget{
+    width: 100%;
+   }
+}
 
 
 
