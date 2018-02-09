@@ -380,6 +380,9 @@ input{
 }
 
 @media only screen and (max-width: 768px) {
+  .main-div{
+    padding: 20px 0;
+  }
    .progress-widget, .small-widge, .action-widget{
     width: 100%;
    }
