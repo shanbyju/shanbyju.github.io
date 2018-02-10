@@ -6,10 +6,7 @@
 	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
 	  <title>NestAway - List Your House</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	  <script type="text/javascript" src="js/jquery.min.js"></script>
-	  <script type="text/javascript" src="js/jquery.geocomplete.js"></script>
-	  <script type="text/javascript" src="js/logger.js"></script>
-	  <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 	</head>	
 	<body>
 		<div class="main-div">
@@ -24,6 +21,7 @@
 					<div class="progress-text">You’re 0% done with your listing</div>
 				</div>
 			</div>
+
 			<h1>Hello welcome to NestAway, lets get your property listed.</h1>
 			<div class="grid content-widget">
 				<h3>We need basic details about you</h3>
@@ -48,11 +46,8 @@
 					</section>
 					<section class="pad-r-20">
 						<div class="map-pin">
-							<form>
-								<input type="" name="" id="geocomplete" placeholder="In which city do you currently live?">
-							</form>
+							<input type="" name="" id="locationTextField" placeholder="In which city do you currently live?">
 						</div>
-						<div class="map_canvas" style="display: none;"></div>
 					</section>
 				</div>
 				<!-- action -->
@@ -62,20 +57,13 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			$(document).ready(function(){
-		    $("#geocomplete").change(function(){
-		        $('.map_canvas').show();
-		    });
-			});
-			$(function(){
-          var options = {
-          map: ".map_canvas",
-        };
-        
-        $("#geocomplete").geocomplete(options);
-        
-      });
-	  </script>
+		<script type="text/javascript">
+			function init() {
+        var input = document.getElementById('locationTextField');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+      }
+
+      google.maps.event.addDomListener(window, 'load', init);
+		</script>
 	</body>
 </html>
