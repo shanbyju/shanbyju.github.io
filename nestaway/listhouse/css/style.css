@@ -379,6 +379,24 @@ input{
   padding-left: 35px;
 }
 
+.map_canvas { 
+  width: 480px; 
+  height: 150px; 
+  border-radius: 4px;
+  padding-right: 20px;
+  margin: 10px 20px 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
   .main-div{
     padding: 0 20px;
