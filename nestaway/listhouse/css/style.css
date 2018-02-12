@@ -158,8 +158,8 @@ p{
 }
 
 .na-custome input[type=radio]:checked + label span.btn-span{
-  background-color: #f25362;
-  border-color: #f25362;
+  background-color: #00a59e;
+  border-color: #00a59e;
   color: #ffffff;
   font-weight: bold;
 }
