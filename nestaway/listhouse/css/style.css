@@ -136,6 +136,21 @@ p{
   font-size: 12px;
   background-color: #f2f8fe !important;
   transition: all .3s ease;
+  position: relative;
+}
+
+
+.na-custome input[type=radio]:checked + label:before{
+  content: "";
+  background: url(../images/black-check-box-with-white-check.svg) no-repeat;
+  position: absolute;
+  z-index: 100;
+  display: block;
+  overflow: hidden;
+  width: 17px;
+  height: 22px;
+  right: 0;
+  top: 0;
 }
 
 .offer-card .na-custome input[type=radio]:checked + label{
