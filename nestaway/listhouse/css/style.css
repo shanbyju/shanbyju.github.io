@@ -507,6 +507,14 @@ input{
     max-width: 100%;
     min-width: 0;
   }
+  .info-widget .col-1-3{
+    border-bottom: 1px solid #eee;
+    border-right: 0;
+    font-size: center;
+  }
+  .step-widget a{
+    font-size: 8px;
+  }
 }
 
 
