@@ -454,6 +454,13 @@ input{
   padding-bottom: 0;
 }
 
+.thank-widget h1 img{
+  width: 67px;
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
 .info-widget{
   border: 1px solid #eee;
   padding-bottom: 50px;
