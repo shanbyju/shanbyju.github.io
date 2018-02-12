@@ -27,7 +27,7 @@
 					<section class="na-custome">
 						<div class="col-1-2">
 							<input type="radio" id="3" name="tenant" value="bed">
-							<label for="3">
+							<label for="3" id="un-furnished">
 							<h3>Rental on sharing</h3>
 							<ul>
 								<li>
@@ -44,7 +44,7 @@
 						</div>
 						<div class="col-1-2">
 							<input type="radio" id="4" name="tenant" value="bed">
-							<label for="4">
+							<label for="4" id="un-furnished2">
 							<h3>Rental on entire <br> house</h3>
 							<ul>
 								<li>
@@ -61,6 +61,60 @@
 						</div>
 						<div class="clr"></div>
 					</section>
+					<div class="plan-offer-widget pad-r-20" id="furnished-details">
+						<div class="heading">Included with all plans</div>
+						<section>
+							<div class="col-1-2">
+								<div class="content">
+									<img src="https://nestaway-assets.akamaized-staging.net/assets/owner_landing/renting-icon1-a52cd7e2c01b510c3d2c390b9741090e.svg">
+									<h3>
+										End-to-End <br>
+										Tenant Management
+									</h3>
+									<p>
+										We take over all tenant-related aspects of renting out a house.
+									</p>
+								</div>
+							</div>
+							<div class="col-1-2">
+								<div class="content">
+									<img src="https://nestaway-assets.akamaized-staging.net/assets/owner_landing/renting-icon2-5da2e8ea7dc037d2befd94daba6544bd.svg">
+									<h3>
+										Rental Default  <br>Guarantee
+									</h3>
+									<p>
+										We guarantee rent payment by <b>5th of every month</b>.
+									</p>
+								</div>
+							</div>
+							<div class="clr"></div>
+						</section>
+						<section>
+							<div class="col-1-2">
+								<div class="content">
+									<img src="https://nestaway-assets.akamaized-staging.net/assets/owner_landing/renting-icon3-8e45905035a120d7e9a75baf3c8e14e4.svg">
+									<h3>
+										Agreement &  <br>Documentation
+									</h3>
+									<p>
+										All rental related paperwork is handled by our legal team.
+									</p>
+								</div>
+							</div>
+							<div class="col-1-2">
+								<div class="content">
+									<img src="https://nestaway-assets.akamaized-staging.net/assets/owner_landing/owner-benifit-icon4-66e30ee7fede4ab7740a4f89922a8a6a.svg">
+									<h3>
+										Up to ₹1Cr Property <br> Insurance
+									</h3>
+									<p>
+										Your house will be insured with <b>₹1 Crore</b> cover against accidental damage.
+									</p>
+								</div>
+							</div>
+							<div class="clr"></div>
+						</section>
+					</div>
 				</div>
 				<!-- action -->
 				<div class="action-widget">
@@ -69,6 +123,13 @@
 				</div>
 			</div>
 		</div>
-
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$("#un-furnished, #un-furnished2 ").click(function(){
+			  $('html, body').animate({
+		       scrollTop: $("#furnished-details").offset().top - 20
+		    }, 1000);
+			});
+		</script>
 	</body>
 </html>
