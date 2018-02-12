@@ -475,13 +475,14 @@ input{
 }
 
 .info-widget{
-  border: 1px solid #eee;
+  background-color: #f2f8fe;
+  border: 1px solid #00a59e;
   padding-bottom: 50px;
 }
 
 .info-widget .col-1-3{
-  border-right: 1px solid #eee;
-  font-size: center;
+  border-right: 1px solid #d5dede;
+  text-align: center;
   padding-right: 0;
 }
 
