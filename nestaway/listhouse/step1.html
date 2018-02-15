@@ -4,6 +4,7 @@
 	  <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
 	  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
 	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
+	  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	  <title>NestAway - List Your House</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	</head>	
@@ -11,13 +12,13 @@
 		<div class="main-div">
 			<div class="step-widget">
 				<a href="" class="active">1. About You</a>
-				<a href="">2. Your Preferred Model</a>
+				<a href="">2. Your Need</a>
 				<a href="">3. Your House</a>
 				<div class="progress-widget">
 					<div class="progress progress-bar__lean">
 						<div class="progress-bar progress-bar-success progress-bar__babu" style="width: 0%;"></div>
 					</div>
-					<div class="progress-text">You’re 0% done with your listing</div>
+					<div class="progress-text">You’re 0% done with your listing (1/5)</div>
 				</div>
 			</div>
 
@@ -34,12 +35,22 @@
 						</div>
 						<div class="clr"></div>
 					</section>
-					<section>
+					<section class="listing-phone-code">
 						<div class="col-1-2">
 							<input type="" name="" placeholder="Email">
 						</div>
 						<div class="col-1-2">
-							<input type="" name="" placeholder="Phone">
+							<div class="col-3-12 pad-r-zero select-cus">
+								<select class="form-control">
+									<option>+91</option>
+									<option>+91</option>
+									<option>+91</option>s
+								</select>
+							</div>
+							<div class="col-9-12 pad-r-zero">
+								<input type="" name="" placeholder="Phone">
+							</div>
+							<div class="clr"></div>
 						</div>
 						<div class="clr"></div>
 					</section>
@@ -47,6 +58,20 @@
 						<div class="map-pin">
 							<input type="" name="" id="locationTextField" placeholder="In which city do you currently live?">
 						</div>
+					</section>
+					<section>
+						<h2>Are you currently staying in India?</h2>
+						<section class="na-custome sml-input">
+							<div class="col-1-2">
+								<input type="radio" id="boys" name="tenant3" value="bed3">
+								<label for="boys" id="boys"><b>Yes, I’m a Resident Indian</b></label>
+							</div>
+							<div class="col-1-2">
+								<input type="radio" id="girls" name="tenant3" value="bed3">
+								<label for="girls" id="girls"><b>No, I’m a Non-Resident Indian (NRI)</b></label>
+							</div>
+							<div class="clr"></div>
+						</section>
 					</section>
 				</div>
 				<!-- action -->

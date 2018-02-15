@@ -6,52 +6,114 @@
 	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
 	  <title>NestAway - List Your House</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	  <script type="text/javascript" src="js/jquery.min.js"></script>
 	</head>	
 	<body>
 		<div class="main-div">
 			<div class="step-widget">
-				<a href="step1.html" class="done">1. About You</a>
-				<a href="" class="active">2. Your Preferred Model</a>
+				<a href="step1.html" class="done">1. ABOUT YOU</a>
+				<a href="" class="active">2. Your Need</a>
 				<a href="">3. Your House</a>
 				<div class="progress-widget">
 					<div class="progress progress-bar__lean">
-						<div class="progress-bar progress-bar-success progress-bar__babu" style="width: 40%;"></div>
+						<div class="progress-bar progress-bar-success progress-bar__babu" style="width: 20%;"></div>
 					</div>
-					<div class="progress-text">You’re 40% done with your listing</div>
+					<div class="progress-text">You’re 20% done with your listing (3/5)</div>
 				</div>
 			</div>
-			<h1>What type of house do you have?</h1>
+			<h1>What do you prefer as your rental model?.</h1>
 			<div class="grid content-widget animated fadeIn">
-				<div class="small-widge">
+				<div class="small-widge offer-card">
 					<section class="na-custome">
-						<div class="col-1-3">
+						<div class="col-1-2">
 							<input type="radio" id="3" name="tenant" value="bed">
-							<label for="3">
-							<img src="images/house.svg">
-							<b>Independent</b></label>
+							<label for="3" id="un-furnished">
+							<div class="header">
+								<img src="images/single.svg">
+								<h3>Shared Room</h3>
+							</div>
+							<ul>
+								<li>
+									<b>Booking Type</b>
+									<span>Bed level</span>
+								</li>
+								<li>
+									<b>Furnishing</b>
+									<span>Fully furnished</span>
+								</li>
+								<li>
+									<b>Commission</b>
+									<span>12.5% per month *</span>
+								</li>
+								<li>
+									<b>Security Deposit</b>
+									<span>2 month</span>
+								</li>
+								<li>
+									<b>Property Insurance</b>
+									<span>Up to &#x20B9; 1crore</span>
+								</li>
+								<li>
+									<b>Rental Default Guarantee</b>
+									<span>Yes</span>
+								</li>
+								<li>
+									<b>Legal Assistance</b>
+									<span>Yes</span>
+								</li>
+								<li>
+									<b>House Care</b>
+									<span>Yes</span>
+								</li>
+							</ul>
+							<span class="btn-span">Choose a plan</span>
 						</div>
-						<div class="col-1-3">
+						<div class="col-1-2">
 							<input type="radio" id="4" name="tenant" value="bed">
-							<label for="4">
-							<img src="images/apartment.svg">
-							<b>Apartment</b></label>
-						</div>
-						<div class="col-1-3">
-							<input type="radio" id="5" name="tenant" value="bed">
-							<label for="5">
-							<img src="images/villa.svg">
-							<b>Villa</b></label>
+							<label for="4" id="un-furnished2">
+							<div class="header">
+								<img src="images/family.svg">
+								<h3>Entire House</h3>
+							</div>
+							<ul>
+								<li>
+									<b>Booking Type</b>
+									<span>Complete house level</span>
+								</li>
+								<li>
+									<b>Furnishing</b>
+									<span>Unfurnished</span>
+								</li>
+								<li>
+									<b>Commission</b>
+									<span>10% per month *</span>
+								</li>
+								<li>
+									<b>Security Deposit</b>
+									<span>2 month</span>
+								</li>
+								<li>
+									<b>Property Insurance</b>
+									<span>Up to &#x20B9; 1crore</span>
+								</li>
+								<li>
+									<b>Rental Default Guarantee</b>
+									<span>Yes</span>
+								</li>
+								<li>
+									<b>Legal Assistance</b>
+									<span>Yes</span>
+								</li>
+								<li>
+									<b>House Care</b>
+									<span>Yes</span>
+								</li>
+							</ul>
+							<span class="btn-span">Choose a plan</span>
 						</div>
 						<div class="clr"></div>
-					</section>
-					<section class="pad-r-20">
-						<h2 id="house">Where is your house located?</h2>
-						<h2 style="display: none;" id="apartent">What is your apartment name?</h2>
-						<div class="map-pin">
-							<input type="" name="" id="locationTextField" placeholder="House Address">
-						</div>
-						<div class="map_canvas" style="display: none;"></div>
+						<span class="condition">
+							* NestAway shall deduct 12.5% of the rental received in every month towards service charges.
+						</span>
 					</section>
 				</div>
 				<!-- action -->
