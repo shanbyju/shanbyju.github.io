@@ -248,7 +248,7 @@ input{
 
 
 .main-div{
-  width: 500px;
+  width: 600px;
   margin: auto;
   text-align: center;
 }
@@ -260,8 +260,8 @@ input{
 }
 
 .main-div .grid{
-  max-width: 500px;
-  min-width: 500px;
+  max-width: 600px;
+  min-width: 600px;
 }
 
 .step-widget{
@@ -302,7 +302,7 @@ input{
 }
 
 .small-widge{
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -443,12 +443,14 @@ input{
 .offer-card h3{
   text-align: left !important;
   line-height: 22px;
+  font-weight: bold;
 }
 
 .offer-card ul{
   margin: 0;
   padding: 0;
   padding: 20px;
+  padding-top: 10px;
 }
 
 .offer-card ul li{
@@ -456,19 +458,17 @@ input{
   text-align: left !important;
   padding: 6px 0;
   line-height: 22px;
-  border-bottom: 1px solid #eeeeee;
-  font-size: 14px;
+  font-size: 13px;
   margin-left: 30px;
-
 
 }
 
 .offer-card ul li:before{
-  background: url(../images/tick.svg);
+  background: url(../images/tick-sign.svg);
   background-size: cover;
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   left: -31px;
   position: absolute;
   top: 10px;
@@ -492,6 +492,16 @@ input{
 
 .offer-card span.btn-span:hover{
   text-decoration: none;
+}
+
+.highlight-widget{
+  background-color: #fff89a;
+  padding: 10px;
+}
+
+.highlight-widget b{
+  display: block;
+  font-weight: bold !important;
 }
 
 .thank-widget h1{
@@ -614,13 +624,13 @@ input{
 }
 
 .offer-card .header{
-background: -moz-linear-gradient(top, #9bdf99 0%, #55d2af 100%);
-background: -webkit-linear-gradient(top, #9bdf99 0%,#55d2af 100%);
-background: linear-gradient(to bottom, #9bdf99 0%,#55d2af 100%);
-color: #ffffff;
-padding: 20px;
-padding-bottom: 10px;
-border-bottom: 5px solid #000000;
+  padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.offer-card .header img{
+  width: 70%;
 }
 
 .offer-card .header h3{
@@ -628,7 +638,25 @@ border-bottom: 5px solid #000000;
   text-align: center !important;
   margin-bottom: 0;
   padding-bottom: 0;
-  color: #ffffff;
+  color: #f35362 ;
+}
+
+.offer-card .header p{
+  line-height: 20px;
+  color: #656464;
+  margin-bottom: 0;
+}
+
+.offer-card .header b{
+  display: block;
+  padding-top: 3px;
+  font-weight: bold !important;
+}
+
+.offer-card h4{
+  font-size: 15px !important;
+  text-align: center;
+  padding-top: 20px;
 }
 
 
@@ -657,6 +685,41 @@ border-bottom: 5px solid #000000;
 .listing-phone-code input{
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.select-cus2{
+  position: relative;
+}
+
+.select-cus2 select{
+  text-align: center;
+  text-align-last: center;
+}
+
+.select-cus2:after{
+  content: "";
+  background: url(../images/angle-arrow-down.svg) no-repeat;
+  background-size: 8px 21px;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  width: 17px;
+  height: 22px;
+  right: 12px;
+  top: 12px;
+}
+
+.select-cus2 .form-control{
+  border-radius: 4px !important;
+  height: 42px !important;
+  border: 2px solid #979797;
+  font-size: 13px;
+  -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ outline: none;
+ background: transparent !important;
 }
 
 .listing-phone-code .select-cus{

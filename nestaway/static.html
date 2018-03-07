@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Baiju</title>
+	  <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+	  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	</head>	
+	<body>
+</canvas>
+	<div class="main-widget">
+		<header>
+			<div class="grid">
+				<div class="col-5-12">
+					<a href="https://www.nestaway.com">
+						<img class="logo" src="https://d2jkxa685yvbof.cloudfront.net/assets/new-home/logo-colored-528f66519ed29c3da4a247ea32f65187.svg">
+					</a>
+				</div>
+				<div class="col-7-12">
+					<nav>
+						<a href="https://faq.nestaway.com/docs/refer-earn" target="_blank">FAQs</a>
+						<a href="">Login</a>
+					</nav>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</header>
+		
+		<div class="container-inner">
+			<div>
+				<img src="images/icon.jpg">
+			</div>
+			<ul>
+				<li><b>Refer and Earn</b> <br>
+					<a href="https://www.nestaway.com/referrals_home">
+						https://www.nestaway.com/referrals_home
+					</a> <br>
+					<a href="https://www.nestaway.com/affiliate/influencer">https://www.nestaway.com/affiliate/influencer</a>
+					<br>
+					<a href="https://www.nestaway.com/invitations/new">https://www.nestaway.com/invitations/new</a>
+					<br>
+					<a href="https://www.nestaway.com/invitations/ONE T5914">https://www.nestaway.com/invitations/ONE T5914</a>
+				</li>
+				<li>
+				<br>
+					<b>College</b> <br>
+					<a href="https://www.nestaway.com/college">https://www.nestaway.com/college</a>
+				</li>
+				<br>
+				<li>
+					<b>Corporate</b> <br>
+					<a href="https://www.nestaway.com/corporate">https://www.nestaway.com/corporate</a>
+				</li>
+				<br>
+				<li>
+					<b>List your house</b> <br>
+					<a href="https://www.nestaway.com/welcome/list_your_house">https://www.nestaway.com/welcome/list_your_house</a>
+				</li>
+				<li>
+					<b>Careers</b> <br>
+					<a href="https://www.nestaway.com/careers">https://www.nestaway.com/careers</a>
+				</li>
+				<br>
+				<li>
+					<b>About Us</b><br>
+					<a href="https://www.nestaway.com/welcome/about">https://www.nestaway.com/welcome/about</a>
+				</li>
+				<br>
+				<li>
+					<b>Contact us</b> <br>
+					<a href="https://www.nestaway.com/welcome/contact">https://www.nestaway.com/welcome/contact</a>
+				</li>
+				<br>
+				<li><b>What is a nestaway home</b> <br>
+						<a href="https://www.nestaway.com/welcome/home">https://www.nestaway.com/welcome/home</a>
+				</li>
+				<br>
+				<li>
+					<b>Site Map</b> <br>
+					<a href="https://www.nestaway.com/sitemap.html">https://www.nestaway.com/sitemap.html</a>
+				</li>
+				<hr>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		var circles = [],
+	    canvas = document.getElementById("canvas1"),
+	    context = canvas.getContext("2d"),
+	    
+	    // SETTINGS 
+	    opacity = 0.6,                                      // the opacity of the circles 0 to 1
+	    colors = ['rgba(34, 49, 63,' + opacity + ')',       // an array of rgb colors for the circles
+	              'rgba(189, 195, 199,' + opacity + ')',
+	              'rgba(243, 79, 120,' + opacity + ')',
+	              'rgba(0, 215, 197,' + opacity + ')',
+	              'rgba(0, 215, 197,' + opacity + ')'
+	             ],
+	    minSize = 1,                                        // the minimum size of the circles in px
+	    maxSize = 10,                                       // the maximum size of the circles in px
+	    numCircles = 14,                                   // the number of circles
+	    minSpeed = -2,                                     // the minimum speed, recommended: -maxspeed
+	    maxSpeed = 2,                                    // the maximum speed of the circles
+	    expandState = true;                                      // the direction of expansion
+
+	function buildArray() {
+	    'use strict';
+	    
+	    for (var i =0; i < numCircles ; i++){
+	        var color = Math.floor(Math.random() * (colors.length - 1 + 1)) + 1,
+	            left = Math.floor(Math.random() * (canvas.width - 0 + 1)) + 0,
+	            top = Math.floor(Math.random() * (canvas.height - 0 + 1)) + 0,
+	            size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize,
+	            leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+	            topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+	            expandState = expandState;
+	           
+	            while(leftSpeed == 0 || topSpeed == 0){
+	                leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+	                topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10;
+	            }
+	        var circle = {color:color, left:left, top:top, size:size, leftSpeed:leftSpeed, topSpeed:topSpeed, expandState:expandState };
+	        circles.push(circle);
+	    }
+	}
+
+	function build(){
+	    'use strict';
+	    
+	    for(var h = 0; h < circles.length; h++){
+	        var curCircle = circles[h];
+	        context.fillStyle = colors[curCircle.color-1];
+	        context.beginPath();
+	        if(curCircle.left > canvas.width+curCircle.size){
+	            curCircle.left = 0-curCircle.size;
+	            context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+	        }else if(curCircle.left < 0-curCircle.size){
+	            curCircle.left = canvas.width+curCircle.size;
+	            context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+	        }else{
+	            curCircle.left = curCircle.left+curCircle.leftSpeed;
+	            context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false); 
+	        }
+	        
+	        if(curCircle.top > canvas.height+curCircle.size){
+	            curCircle.top = 0-curCircle.size;
+	            context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+
+	        }else if(curCircle.top < 0-curCircle.size){
+	            curCircle.top = canvas.height+curCircle.size;
+	            context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+	        }else{
+	            curCircle.top = curCircle.top+curCircle.topSpeed;
+	            if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == false){
+	              curCircle.size = curCircle.size-0.1;
+	            }
+	            else if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == true){
+	              curCircle.size = curCircle.size+0.1;
+	            }
+	            else if(curCircle.size == maxSize && curCircle.expandState == true){
+	              curCircle.expandState = false;
+	              curCircle.size = curCircle.size-0.1;
+	            }
+	            else if(curCircle.size == minSize && curCircle.expandState == false){
+	              curCircle.expandState = true;
+	              curCircle.size = curCircle.size+0.1;
+	            }
+	            context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false); 
+	        }
+	        
+	        context.closePath();
+	        context.fill();
+	        context.ellipse;
+	    }
+	}
+
+
+	var xVal = 0;
+
+	window.requestAnimFrame = (function (callback) {
+	    'use strict';
+	    return window.requestAnimationFrame ||
+	    window.webkitRequestAnimationFrame ||
+	    window.mozRequestAnimationFrame ||
+	    window.oRequestAnimationFrame ||
+	    window.msRequestAnimationFrame ||
+	    function (callback) {
+	        window.setTimeout(callback, 1000/60);
+	    };
+	})();
+
+	function animate() {
+	    'use strict';
+	    var canvas = document.getElementById("canvas1"),
+	        context = canvas.getContext("2d");
+
+	    // clear the canvas
+	    context.clearRect(0, 0, canvas.width, canvas.height);
+
+
+	    // draw the next frame
+	    xVal++;
+	    build();
+
+	    //console.log("Prep: animate ==> requestAnimFrame");
+	    // request a new frame
+	    requestAnimFrame(function () {
+	        animate();
+	    });
+	}
+	window.onload = function () {
+	    'use strict';
+	    canvas.width = window.innerWidth;
+	    canvas.height = window.innerHeight;
+	    buildArray();
+	    animate();
+	};
+
+
+	window.onresize = function () {
+	    'use strict';
+	    console.log("resize");
+	    canvas.width = window.innerWidth;
+	    canvas.height = window.innerHeight;
+	    //buildArray();
+	    animate();
+	};
+
+
+	</script>
+</body>
+</html>
