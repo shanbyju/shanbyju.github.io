@@ -177,14 +177,25 @@ a.nav-link{
   padding: 0 12px;
 }
 
+.input-field input{
+  border: 0;
+  outline: none;
+}
+
+.input-field img{
+  position: relative;
+  top: -2px;
+}
+
 .map-btn{
-  display: block;
+  display: inline-block;
   border: 2px solid black;
   background-color: white;
   color: black;
   border-radius: 20px;
-  padding: 4px 8px;
+  padding: 0 12px;
   text-align: center;
+  float: right;
 }
 
 .bread{
@@ -201,6 +212,7 @@ a.nav-link{
 
 .bread span{
   display: block;
+  margin-top: -6px;
 }
 
 .about-city{
