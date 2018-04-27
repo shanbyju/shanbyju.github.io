@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 27</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-251.000000, -85.000000)">
+        <g id="Group-4" transform="translate(0.000000, 23.000000)" stroke="#000000" stroke-width="1.32352941">
+            <g id="Group-27" transform="translate(252.000000, 63.000000)">
+                <path d="M8,-5.2027972 L8,9.56643357" id="Line" stroke-linecap="round" transform="translate(8.000000, 2.181818) rotate(90.000000) translate(-8.000000, -2.181818) "></path>
+                <path d="M8,0.615384615 L8,15.3846154" id="Line-Copy" stroke-linecap="round" transform="translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) "></path>
+                <path d="M8,6.43356643 L8,21.2027972" id="Line-Copy-2" stroke-linecap="round" transform="translate(8.000000, 13.818182) rotate(90.000000) translate(-8.000000, -13.818182) "></path>
+                <circle id="Oval-15" fill="#FFFFFF" transform="translate(10.909091, 2.181818) rotate(90.000000) translate(-10.909091, -2.181818) " cx="10.9090909" cy="2.18181818" r="2.18181818"></circle>
+                <circle id="Oval-15-Copy-2" fill="#FFFFFF" transform="translate(10.909091, 13.818182) rotate(90.000000) translate(-10.909091, -13.818182) " cx="10.9090909" cy="13.8181818" r="2.18181818"></circle>
+                <circle id="Oval-15-Copy" fill="#FFFFFF" transform="translate(5.090909, 8.000000) rotate(90.000000) translate(-5.090909, -8.000000) " cx="5.09090909" cy="8" r="2.18181818"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
