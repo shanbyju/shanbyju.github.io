@@ -331,6 +331,7 @@ a.nav-link{
 }
 
 .price-widget .rent .label-text{
+  display: block;
   font-size: 10px;
 }
 
@@ -436,6 +437,20 @@ li.insert-li{
   font-size: 12px;
   margin-bottom: 5px;
 }
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 10px 16px;;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  transition: all ease 0.3s;
+}
+
+
 
 .heart {
   width: 100px;

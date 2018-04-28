@@ -12,7 +12,7 @@
 	</head>	
 	<body>
 		<div class="na-brand-widget">
-			<div class="srp-header animated fadeInDown">
+			<div class="srp-header">
 				<div class="city-gender">
 					Bangalore • Girls
 				</div>
@@ -572,6 +572,14 @@
 			$('.heart').click(function() {
 				$(this).toggleClass('active');
 			});
+
+			$(document).on("scroll", function () {
+		    if ($(document).scrollTop() >= 20) {
+		      $(".search-top").addClass("fixed");
+		    } else{
+		      $(".search-top").removeClass("fixed");
+		    }
+		  });
     </script>
 
 
