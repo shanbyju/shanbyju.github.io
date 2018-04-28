@@ -384,6 +384,57 @@ a.nav-link{
   background: transparent !important;
 }
 
+.insert-widget{
+  padding: 16px;
+}
+
+.insert-widget h2{
+  font-size: 14px;
+  color: black;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+  line-height: 17px;
+  font-weight: normal;
+}
+
+.insert-widget p{
+  margin-bottom: 0;
+  color: #4A4A4A;
+}
+
+li.insert-li{
+  padding: 0 !important;
+  margin-top: 16px !important;
+}
+
+.green-bg{
+  background-color: #DDFE70;
+}
+
+.blue-bg{
+  background-color: #8DEFF9;
+}
+
+.yellow-bg{
+  background-color: #F8E71C;
+  color: black;
+  text-align: center;
+}
+
+.yellow-bg h2{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.black-btn-round{
+  background-color: black;
+  display: inline-block;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 15px;
+  font-size: 12px;
+}
 
 .heart {
   width: 100px;
@@ -395,6 +446,7 @@ a.nav-link{
   background: url(../images/heart.png) no-repeat;
   /*transform: translate(-50%, -50%);*/
   background-position: 0 0;
+  transform: scale(0.8);
 }
 
 .heart.active {
