@@ -354,7 +354,7 @@ a.nav-link{
 
 .price-left .sd{
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   color: black;
   padding-bottom: 8px;
 }
@@ -434,6 +434,7 @@ li.insert-li{
   border-radius: 20px;
   padding: 2px 15px;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .heart {
