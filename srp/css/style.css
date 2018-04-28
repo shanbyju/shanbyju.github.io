@@ -233,4 +233,139 @@ a.nav-link{
   margin-bottom: 0;
 }
 
+.card-container ul{
+  margin: 0;
+  padding: 0;
+}
+
+.card-container ul li{
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  list-style: none;
+}
+
+.card-container ul li .card-view{
+  /*box-shadow: 0 2px 3px 0 rgba(0,0,0,0.07);*/
+  border: 1px solid #979797;
+  border-radius: 1px;
+  background-color: white;
+}
+
+.slider-content{
+  position: relative;
+}
+
+.slider-content .owl-dots{
+  display: none;
+}
+
+.slider-content img{
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+.slider-content button{
+  outline: none;
+  border: 0;
+  font-size: 45px !important;
+}
+
+.slider-content .owl-nav {
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  z-index: 1000;
+  top: 30px;
+}
+
+.slider-content .owl-next{
+  position: absolute;
+  top: 26px;
+  right: 20px;
+}
+
+.slider-content .owl-prev{
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+
+.card-view .content{
+  padding: 16px;
+  padding-bottom: 9px;
+}
+
+.card-view .distance{
+  display: block;
+  font-size: 12px;
+  color: #6F6F6F;
+}
+
+.card-view .tittle{
+  display: block;
+  font-size: 16px;
+  color: black;
+  line-height: 21px;
+}
+
+.card-view .mates{
+  display: block;
+  font-size: 12px;
+  color: #6F6F6F;
+  line-height: 21px;
+  padding-top: 10px;
+}
+
+.card-view .mates b{
+  font-weight: normal;
+  color: #6D7FB4;
+}
+
+.price-widget{
+  border-top: 1px solid #D4D4D4;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.price-widget .rent .label-text{
+  font-size: 10px;
+}
+
+.price-widget .amount{
+  font-size: 22px;
+  position: relative;
+  top: -7px;
+}
+
+.price-widget .amount b{
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.price-left{
+  border-left: 1px solid #D4D4D4;
+  line-height: 13px;
+  padding-left: 15px;
+  margin-top: 9px;
+}
+
+.price-left .sd{
+  display: block;
+  font-size: 12px;
+  color: black;
+  padding-bottom: 8px;
+}
+
+.price-left .semi{
+  display: block;
+  font-size: 12px;
+  color: #4A4A4A;
+}
+
+
+
+
+
 
