@@ -242,6 +242,7 @@ a.nav-link{
   width: 100%;
   margin: auto;
   padding: 15px;
+  padding-bottom: 0;
   list-style: none;
 }
 
@@ -379,6 +380,10 @@ a.nav-link{
   line-height: 19px;
 }
 
+.owl-theme .owl-nav [class*=owl-]:hover{
+  background: transparent !important;
+}
+
 
 .heart {
   width: 100px;
@@ -386,7 +391,7 @@ a.nav-link{
   position: absolute;
   right: -19px;
   top: -21px;
-  z-index: 10;
+  z-index: 99999;
   background: url(../images/heart.png) no-repeat;
   /*transform: translate(-50%, -50%);*/
   background-position: 0 0;
