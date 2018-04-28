@@ -447,7 +447,6 @@ li.insert-li{
   right: 0;
   top: 0;
   z-index: 9999;
-  transition: all ease 0.3s;
   border-bottom: 1px solid #ddd;
 }
 
