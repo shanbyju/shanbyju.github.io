@@ -51,6 +51,10 @@
 							<li class="card-widget">
 								<div class="card-view">
 									<div class="slider-content">
+										<span class="gender-label">
+											Boys/Girls/Family
+										</span>
+										<div class="heart"></div>
 										<div class="owl-carousel owl-theme">
 											<div class="item">
 												<img src="images/1.jpg">
@@ -82,7 +86,7 @@
 													</span>
 												</div>
 											</div>
-											<div class="col-8-12">
+											<div class="col-8-12 pad-r-zero">
 												<div class="price-left">
 													<span class="sd">
 														Security deposit : <b>2 Months Only</b>
@@ -105,7 +109,6 @@
 
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-
     <script type="text/javascript">
   
 		  $('.owl-carousel').owlCarousel({
@@ -120,6 +123,9 @@
         autoplayHoverPause:true,
 			})
 
+			$('.heart').click(function() {
+				$(this).toggleClass('active');
+			});
     </script>
 
 
