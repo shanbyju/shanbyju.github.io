@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>NestAway</title>
+	  <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+	  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://daneden.github.io/animate.css/animate.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	</head>	
+	<body>
+	<style type="text/css">
+		
+	</style>
+		<div class="na-brand-widget">
+			<div class="srp-header fixed">
+				<div class="search-top">
+					<div class="col-9-12 pad-r-zero">
+						<div class="input-field">
+							<input type="" name="" placeholder="HSR Layout • Shared rooms • 4k...">
+							<img src="images/filter-icon.svg">
+						</div>
+					</div>
+					<div class="col-3-12 pad-r-zero">
+						<span class="map-btn" onclick="location.href='srp.html'">GRID</span>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+			<div class="inner-container">
+				<div class="grid">
+					<div class="bread">
+						<h1>
+							100 familly homes on rent for girls in Koramangala
+						</h1>
+					</div>
+					<!-- card -->
+					<div class="map-container">
+					<div id="map"></div>
+						<!-- <iframe id="" src="https://maps.google.com/maps?q=hsr layout&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe> -->
+					</div>
+					<!-- card -->
+				</div>
+			</div>
+		</div>
+
+
+    <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript">
+  
+		  $('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:true,
+		    items: 1,
+		    // animateOut: 'slideOutDown',
+    		// animateIn: 'fadeIn',
+        singleItem: true,
+        //autoplay:true,
+        autoplayHoverPause:true,
+			})
+
+			$('.heart').click(function() {
+				$(this).toggleClass('active');
+			});
+
+			$(document).on("scroll", function () {
+		    if ($(document).scrollTop() >= 100) {
+		      $(".search-top").addClass("fixed");
+		    } else{
+		      $(".search-top").removeClass("fixed");
+		    }
+		  });
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#c8d7d4"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#070707"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+
+	</body>
+</html>
