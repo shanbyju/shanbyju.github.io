@@ -11,9 +11,6 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	</head>	
 	<body>
-	<style type="text/css">
-		
-	</style>
 		<div class="na-brand-widget">
 			<div class="srp-header fixed">
 				<div class="search-top">
@@ -29,7 +26,7 @@
 					<div class="clr"></div>
 				</div>
 			</div>
-			<div class="inner-container">
+			<div class="inner-container map-view-content">
 				<div class="grid">
 					<div class="bread">
 						<h1>
@@ -41,6 +38,110 @@
 						<iframe id="" src="https://maps.google.com/maps?q=hsr layout&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
 					</div>
 					<!-- card -->
+					<div class="map-card-container">
+						<ul class="h-scroll-wrapper">
+							<li class="map-card">
+								<div class="col-4-12 pad-r-zero">
+									<div class="house-pic">
+										<div class="heart"></div>
+										<img src="images/liv1.jpg">
+									</div>
+								</div>
+								<div class="col-8-12 pad-r-zero">
+									<div class="content">
+										<h5>3BHK • Koramangala</h5>
+										<div class="price-map">
+											<span class="label-text">Rent start from</span>
+											<span class="amount">
+												<b>₹</b>7,000<b>/bed</b>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</li>
+							<li class="map-card">
+								<div class="col-4-12 pad-r-zero">
+									<div class="house-pic">
+										<div class="heart"></div>
+										<img src="images/liv2.jpg">
+									</div>
+								</div>
+								<div class="col-8-12 pad-r-zero">
+									<div class="content">
+										<h5>3BHK • Koramangala</h5>
+										<div class="price-map">
+											<span class="label-text">Rent start from</span>
+											<span class="amount">
+												<b>₹</b>7,000<b>/bed</b>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</li>
+							<li class="map-card">
+								<div class="col-4-12 pad-r-zero">
+									<div class="house-pic">
+										<div class="heart"></div>
+										<img src="images/liv3.jpg">
+									</div>
+								</div>
+								<div class="col-8-12 pad-r-zero">
+									<div class="content">
+										<h5>3BHK • Koramangala</h5>
+										<div class="price-map">
+											<span class="label-text">Rent start from</span>
+											<span class="amount">
+												<b>₹</b>8,000<b>/bed</b>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</li>
+							<li class="map-card">
+								<div class="col-4-12 pad-r-zero">
+									<div class="house-pic">
+										<div class="heart"></div>
+										<img src="images/liv4.jpg">
+									</div>
+								</div>
+								<div class="col-8-12 pad-r-zero">
+									<div class="content">
+										<h5>3BHK • Koramangala</h5>
+										<div class="price-map">
+											<span class="label-text">Rent start from</span>
+											<span class="amount">
+												<b>₹</b>7,000<b>/bed</b>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</li>
+							<li class="map-card">
+								<div class="col-4-12 pad-r-zero">
+									<div class="house-pic">
+										<div class="heart"></div>
+										<img src="images/liv5.jpg">
+									</div>
+								</div>
+								<div class="col-8-12 pad-r-zero">
+									<div class="content">
+										<h5>3BHK • Koramangala</h5>
+										<div class="price-map">
+											<span class="label-text">Rent start from</span>
+											<span class="amount">
+												<b>₹</b>7,000<b>/bed</b>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -49,7 +150,6 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script type="text/javascript">
-  
 		  $('.owl-carousel').owlCarousel({
 		    loop:true,
 		    margin:10,
@@ -65,14 +165,6 @@
 			$('.heart').click(function() {
 				$(this).toggleClass('active');
 			});
-
-			$(document).on("scroll", function () {
-		    if ($(document).scrollTop() >= 100) {
-		      $(".search-top").addClass("fixed");
-		    } else{
-		      $(".search-top").removeClass("fixed");
-		    }
-		  });
     </script>
 
 

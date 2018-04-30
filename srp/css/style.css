@@ -229,6 +229,115 @@ a.nav-link{
   font-weight: normal;
 }
 
+.h-scroll-wrapper{
+  list-style: none;
+  white-space: nowrap;
+  overflow: auto;
+  overflow-x: scroll;
+  padding-right: 20px;
+  padding-left: 1px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.map-card-container{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -moz-linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.9) 100%);
+  background: -webkit-linear-gradient(180deg, transparent 40%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(180deg, transparent 40%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.map-card-container ul{
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+
+.map-view-content .bread{
+  position: absolute;
+  z-index: 99;
+  top: 54px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 10px !important;
+  background-color: white;
+  text-align: center;
+  padding: 7px;
+  margin: auto;
+
+}
+
+.map-view-content .bread h1{
+  font-size: 11px;
+}
+
+li.map-card{
+  display: inline-block;
+}
+
+.map-card{
+  width: 73%;
+  background: #fff;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  list-style-type: none;
+  line-height: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 2px;
+}
+
+.map-card img{
+  width: 100%;
+  height: 64px;
+}
+
+.map-card .col-4-12{
+  width: 45%;
+}
+
+.map-card .col-8-12{
+  width: 55%;
+}
+
+.map-card .house-pic{
+  position: relative;
+}
+
+.map-card .heart{
+  right: -32px;
+  top: -34px;
+}
+
+.map-card h5{
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+.map-card .content{
+  padding: 10px;
+}
+
+.price-map .label-text{
+  display: block;
+  font-size: 9px;
+}
+
+.price-map .amount{
+  font-size: 13px;
+}
+
+.price-map .amount b{
+  font-size: 11px;
+  font-weight: normal;
+}
+
 .about-city p{
   margin-bottom: 0;
 }
