@@ -24,7 +24,7 @@
 						</div>
 					</div>
 					<div class="col-3-12 pad-r-zero">
-						<span class="map-btn">MAP</span>
+						<span class="map-btn" onclick="location.href='map.html'">MAP</span>
 					</div>
 					<div class="clr"></div>
 				</div>
@@ -574,7 +574,7 @@
 			});
 
 			$(document).on("scroll", function () {
-		    if ($(document).scrollTop() >= 48) {
+		    if ($(document).scrollTop() >= 100) {
 		      $(".search-top").addClass("fixed");
 		    } else{
 		      $(".search-top").removeClass("fixed");
