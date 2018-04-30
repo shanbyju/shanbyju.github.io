@@ -245,9 +245,9 @@ a.nav-link{
   left: 0;
   bottom: 0;
   right: 0;
-  background: -moz-linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.9) 100%);
-  background: -webkit-linear-gradient(180deg, transparent 40%, rgba(255, 255, 255, 0.9) 100%);
-  background: linear-gradient(180deg, transparent 40%, rgba(255, 255, 255, 0.9) 100%);
+  background: -moz-linear-gradient(180deg, transparent 80%, rgba(0,0,0,0.9) 100%);
+  background: -webkit-linear-gradient(180deg, transparent 80%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(180deg, transparent 80%, rgba(255, 255, 255, 0.9) 100%);
 }
 
 .map-card-container ul{
@@ -269,11 +269,23 @@ a.nav-link{
   text-align: center;
   padding: 7px;
   margin: auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.12);
 
 }
 
 .map-view-content .bread h1{
   font-size: 11px;
+}
+
+.map-pin{
+  position: absolute;
+  z-index: 99;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 li.map-card{
